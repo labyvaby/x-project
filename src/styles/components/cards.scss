@@ -1,0 +1,26 @@
+/* Generic cards used across the app */
+.card {
+  background: #0f0f0f;
+  border: 1px solid #1f1f1f;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 16px;
+  color: #e5e5e5;
+}
+
+.card-snippet {
+  margin: 0;
+  color: #a3a3a3;
+  font-size: 13px;
+}
+
+.card-actions {
+  margin-top: auto;
+}
