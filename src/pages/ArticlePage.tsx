@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ARTICLES } from '../data/articles';
 import { ARTICLES_I18N } from '../data/articles.i18n';

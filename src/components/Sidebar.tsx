@@ -1,7 +1,7 @@
-import React from 'react';
 import type { Tab } from '../types';
 import { Icon } from './Icon';
 import { useI18n } from '../i18n/I18nContext';
+import { useState } from 'react';
 
 type SidebarProps = {
   tabs: readonly Tab[];
@@ -13,7 +13,7 @@ type SidebarProps = {
 
 export function Sidebar({ tabs, active, onSelect, collapsed, onToggle }: SidebarProps) {
   const { t, lang, setLang } = useI18n();
-  const [langOpen, setLangOpen] = React.useState(false);
+  const [langOpen, setLangOpen] = useState(false);
 
   const tabLabel = (tab: Tab) => {
     switch (tab) {

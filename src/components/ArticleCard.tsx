@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Article } from '../types';
 import { useI18n } from '../i18n/I18nContext';
 import { ARTICLES_I18N } from '../data/articles.i18n';

@@ -1,4 +1,4 @@
-import React, { useState, type FormEvent } from 'react';
+import { useState, type FormEvent } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { isAuthenticated, setAuthenticated } from '../utils/auth';
 import { useI18n } from '../i18n/I18nContext';

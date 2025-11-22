@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { Tab, Achievement } from '../types';
 import { TABS } from '../constants/tabs';
