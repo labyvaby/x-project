@@ -10,16 +10,34 @@
   background: transparent;
 }
 
+/* Offset main content to the right of the fixed sidebar */
+.app-layout > .main {
+  margin-left: var(--sidebar-w);
+}
+/* When the sidebar is collapsed via class, reduce the offset */
+.app-layout > .sidebar.collapsed + .main {
+  margin-left: var(--sidebar-w-collapsed);
+}
+
+/* On small screens we force the collapsed width even if the class is not set */
+@media (max-width: 900px) {
+  .app-layout > .main {
+    margin-left: var(--sidebar-w-collapsed);
+  }
+}
+
 /* Main area */
 .main {
   flex: 1;
   min-width: 0;
   display: flex;
   flex-direction: column;
+  padding-left: 90px;
 }
 
 .main-header {
   padding: 16px 20px;
+  padding-left: 90px;
   border-bottom: 1px solid #1f1f1f;
 }
 

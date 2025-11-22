@@ -23,6 +23,8 @@ export function Sidebar({ tabs, active, onSelect, collapsed, onToggle }: Sidebar
         return t('nav.articles');
       case 'достижение':
         return t('nav.achievements');
+      case 'подробнее':
+        return t('nav.details');
       case 'профиль':
         return t('nav.profile');
       default:
@@ -151,6 +153,8 @@ export function Sidebar({ tabs, active, onSelect, collapsed, onToggle }: Sidebar
                 <Icon name="article" />
               ) : tab === 'достижение' ? (
                 <Icon name="trophy" />
+              ) : tab === 'подробнее' ? (
+                <Icon name="bolt" />
               ) : (
                 <Icon name="user" />
               )}

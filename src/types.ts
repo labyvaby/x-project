@@ -1,6 +1,6 @@
 import type { IconName } from './components/Icon';
 
-export type Tab = 'главная' | 'статьи' | 'достижение' | 'профиль';
+export type Tab = 'главная' | 'статьи' | 'достижение' | 'подробнее' | 'профиль';
 
 export type Question = {
   q: string;

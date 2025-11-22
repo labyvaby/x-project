@@ -171,6 +171,65 @@ export default function DashboardPage() {
             </div>
           </section>
         );
+      case 'подробнее':
+        return (
+          <section className="details">
+            <h2>{t('head.details')}</h2>
+
+            <div className="card-grid">
+              <article className="card">
+                <h4 className="card-title">{t('details.main.title')}</h4>
+                <p>{t('details.main.p1')}</p>
+              </article>
+
+              <article className="card">
+                <h4 className="card-title">{t('details.exchange.title')}</h4>
+                <p><strong>{t('details.exchange.rate')}</strong></p>
+              </article>
+
+              <article className="card">
+                <h4 className="card-title">{t('details.earn.title')}</h4>
+                <p><strong>{t('details.earn.app.title')}</strong></p>
+                <ul>
+                  <li>{t('details.earn.app.b1')}</li>
+                  <li>{t('details.earn.app.b2')}</li>
+                  <li>{t('details.earn.app.b3')}</li>
+                  <li>{t('details.earn.app.b4')}</li>
+                  <li>{t('details.earn.app.b5')}</li>
+                </ul>
+                <p>{t('details.earn.app.note')}</p>
+                <p><strong>{t('details.earn.site.title')}</strong></p>
+                <ul>
+                  <li>{t('details.earn.site.b1')}</li>
+                  <li>{t('details.earn.site.b2')}</li>
+                  <li>{t('details.earn.site.b3')}</li>
+                </ul>
+                <p>{t('details.earn.site.note')}</p>
+              </article>
+
+              <article className="card">
+                <h4 className="card-title">{t('details.spend.title')}</h4>
+                <ul>
+                  <li>{t('details.spend.b1')}</li>
+                  <li>{t('details.spend.b2')}</li>
+                  <li>{t('details.spend.b3')}</li>
+                  <li>{t('details.spend.b4')}</li>
+                  <li>{t('details.spend.b5')}</li>
+                </ul>
+              </article>
+
+              <article className="card">
+                <h4 className="card-title">{t('details.benefits.title')}</h4>
+                <ul>
+                  <li>{t('details.benefits.b1')}</li>
+                  <li>{t('details.benefits.b2')}</li>
+                  <li>{t('details.benefits.b3')}</li>
+                  <li>{t('details.benefits.b4')}</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+        );
       case 'профиль':
         return (
           <section className="profile">
@@ -270,6 +329,8 @@ export default function DashboardPage() {
               ? t('head.articles')
               : active === 'достижение'
               ? t('head.achievements')
+              : active === 'подробнее'
+              ? t('head.details')
               : t('head.profile')}
           </h1>
         </header>
